@@ -5,6 +5,9 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+* a {
+    text-decoration: none;
+}
 
 nav {
     display: flex;
@@ -19,7 +22,6 @@ nav {
     width: 100vw;
 }
 nav a {
-    text-decoration: none;
     font-size: 1.2em;
     color: hsl(0, 0%, 85%);
     margin: 1vw;
