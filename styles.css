@@ -55,6 +55,18 @@ nav a {
     min-height: 100%;
 }
 
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    background-image: url("background/projectsbg1.jpg");
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto fit, minmax(200px, 1fr));
+}
 /* note: 
 - add parralax effect from webdev & traversy for welcome section (possibly could be used for the rest)
 - make the navbar almost transparent (opacity low + multiply) to make it like stylish-elegant-expensive website 
