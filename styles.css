@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    /* font-family: 'Space Mono', monospace; */
 }
 * a {
     text-decoration: none;
@@ -11,12 +12,15 @@
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsla(0, 0%, 0%, .5);
+    /* background-blend-mode: multiply; */
+    /* mix-blend-mode: difference; */
     
     position: fixed;
+    z-index: 2;
     top: 0;
     min-height: 8vh;
     width: 100vw;
@@ -30,6 +34,9 @@ nav a {
 
 #welcome-section {
     height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -37,8 +44,16 @@ nav a {
     align-items: center;
 
     font-size: 2rem;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    text-shadow: 0 0 10px black;
 }
-
+#welcome-section video {
+    z-index: -100;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
 
 /* note: 
 - add parralax effect from webdev & traversy for welcome section (possibly could be used for the rest)
