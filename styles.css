@@ -88,8 +88,9 @@ nav a {
 .projects-grid div{
     background-color: hsla(220, 15%, 10%, .6);
     border-radius: 5px;
+    transition: 100ms;
 }
-.projects-grid a > img {
+.projects-grid img {
     max-width: 100%;
     border-radius: 5px;
     padding: .8em;
@@ -101,6 +102,10 @@ nav a {
     padding: .8em;
     padding-top: 0;
 }
+.projects-grid div:hover {
+    background-color: hsla(220, 15%, 10%, .9);
+    transform: translate(10px, -10px);
+}    
 /* note: 
 - add parralax effect from webdev & traversy for welcome section (possibly could be used for the rest)
 - make the navbar almost transparent (opacity low + multiply) to make it like stylish-elegant-expensive website 
