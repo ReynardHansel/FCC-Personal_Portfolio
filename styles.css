@@ -55,7 +55,7 @@ nav a {
 }
 #welcome-section video {
     z-index: -100;
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
 }
@@ -223,6 +223,5 @@ nav a {
 }
 }
 /* note: 
-- add parralax effect from webdev & traversy for welcome section (possibly could be used for the rest)
-- make the navbar almost transparent (opacity low + multiply) to make it like stylish-elegant-expensive website 
-- make the background of welcome section a sci-fi compute-y digital like gif/animation*/
+- add parralax
+- add hover effect for nav <a>*/
