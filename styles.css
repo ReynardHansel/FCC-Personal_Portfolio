@@ -36,6 +36,7 @@ nav a {
     margin-right: 2em;
 }
 
+
 #welcome-section {
     min-height: 100vh;
     max-width: 100vw;
@@ -203,6 +204,23 @@ footer {
     color: hsl(220, 15%, 60%);
     font-style: italic;
     font-weight: 700;
+}
+
+
+@media (max-width: 40em) {
+nav {
+    justify-content: center;
+}
+nav a {
+    font-size: 1.1rem;
+}
+.contacts-flex {
+    justify-content: space-between;
+    width: 60vw;
+}
+.contacts-flex img {
+    max-height: 9vh;
+}
 }
 /* note: 
 - add parralax effect from webdev & traversy for welcome section (possibly could be used for the rest)
