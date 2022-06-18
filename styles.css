@@ -15,18 +15,19 @@
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
     background-color: hsla(0, 0%, 0%, .5);
     /* background-blend-mode: multiply; */
-    /* mix-blend-mode: difference; */
+    mix-blend-mode: screen;
     
     position: fixed;
     z-index: 100;
     top: 0;
     min-height: 8vh;
     width: 100vw;
+    margin: 0 2vw;
 }
 nav a {
     font-size: 1.2em;
