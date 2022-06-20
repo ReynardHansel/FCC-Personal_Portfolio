@@ -204,6 +204,7 @@ nav a:hover::after {
     /* width: 30vw; */
     max-height: 10vh;
     aspect-ratio: 1/1;
+    transition: 200ms ease-out;
 }
 #contact video {
     position: absolute;
@@ -216,7 +217,11 @@ nav a:hover::after {
     min-width: 100%;
     min-height: 100%;
 }
-
+.contacts-flex img:hover {
+    filter: drop-shadow(0 0 2px white);
+    /* border-radius: 50%; */
+    transform: translateY(1.1vh);
+}
 
 
 footer {
