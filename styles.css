@@ -59,6 +59,10 @@ nav a:hover::after {
 
 
 #welcome-section {
+    background-image: url(background/bg1.PNG);
+    background-color: black;
+    background-blend-mode: multiply;
+
     min-height: 100vh;
     max-width: 100vw;
     position: relative;
@@ -168,7 +172,9 @@ nav a:hover::after {
     align-items: center;
     /* grid-gap: 10vh; */
     
-    background-color: hsla(0, 0%, 0%, .3);
+    background-image: url("background/bg2.PNG");
+    background-color: hsla(0, 0%, 0%, .5);
+    background-blend-mode: multiply;
 
     min-height: 93vh;
     overflow: hidden;
