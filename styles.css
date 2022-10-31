@@ -97,14 +97,22 @@ nav a:hover::after {
     text-align: center;
     padding: 3em;
 }
-#projects > p {
+#projects > p:first-child {
     display: inline-block;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid white;
+}
+#projects > p {
+    /* display: inline-block; */
     padding-bottom: .3em;
     margin-top: 2em;
     color: white;
-    font-size: 2rem;
-    font-style: italic;
-    border-bottom: 2px solid white;
+    font-size: 1.1rem;
+    font-family: 'Space Mono', monospace;
+    /* font-style: italic; */
+    /* border-bottom: 2px solid white; */
 }
 
 .projects-grid {
