@@ -32,7 +32,7 @@ nav {
 }
 nav a {
     font-size: 1.2em;
-    color: hsl(0, 0%, 85%);
+    color: hsl(0, 0%, 90%);
     margin: 1vw;
     margin-right: 2em;
 
@@ -73,7 +73,7 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
 
-    font-size: 2rem;
+    font-size: clamp(1rem, 80vw, 1.5rem);
     color: white;
     background-color: hsla(0, 0%, 0%, 0.6);
     text-shadow: 0 0 10px black;
@@ -121,17 +121,27 @@ nav a:hover::after {
     grid-gap: 2em;
     margin-top: 3em;
     margin-bottom: 2em;
+    max-width: 100%;
 }
 .projects-grid div{
     background-color: hsla(220, 15%, 10%, .6);
     border-radius: 5px;
+    max-width: 100%;
     transition: 200ms;
+}
+.projects-grid > div> a{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
 }
 .projects-grid img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: .8em;
     padding-bottom: 0;
+    transition: 200ms;
+    transition-delay: 130ms;
 }
 .projects-grid p {
     color: white;
@@ -159,7 +169,11 @@ nav a:hover::after {
 }
 .projects-grid div:hover {
     background-color: hsla(220, 15%, 10%, .9);
-    transform: scale(97%);
+    transform: scale(98%);
+}    
+.projects-grid div:hover img{
+    padding: 0;
+    border-radius: 0;
 }    
 .projects-grid div:hover p::before {
     opacity: 1;
@@ -209,15 +223,26 @@ nav a:hover::after {
     flex-wrap: wrap;
 
     width: 50vw;
+    max-width: 25em;
 }
 /* .contacts-flex a {
     display: inline-block;
     height: 100%;
+    width: max-content;
 } */
-.contacts-flex img {
-    /* width: 30vw; */
+/* .contacts-flex img {
+    width: 30vw;
     max-height: 10vh;
     aspect-ratio: 1/1;
+    transition: 200ms ease-out;
+} */
+.contacts-flex svg {
+    width: 100%;
+    height: 100%;
+    max-height: 10vh;
+    /* height: 100%; */
+    /* aspect-ratio: 1/1; */
+    color: white;
     transition: 200ms ease-out;
 }
 #contact video {
@@ -231,16 +256,17 @@ nav a:hover::after {
     min-width: 100%;
     min-height: 100%;
 }
-.contacts-flex img:hover {
-    filter: drop-shadow(0 0 2px white);
+.contacts-flex svg:hover {
+    filter: drop-shadow(0 0 1.5px hsl(0, 0%, 80%));
     /* border-radius: 50%; */
-    transform: translateY(1.1vh);
+    transform: translateY(.7vh);
+    scale: 90%;
 }
 
 
 footer {
     background-color: hsl(220, 36%, 5%);
-    padding: .4em;
+    padding: 1.1em;
     color: hsl(220, 15%, 60%);
     font-style: italic;
     font-weight: 700;
@@ -256,6 +282,9 @@ nav {
 }
 nav a {
     font-size: 1.1rem;
+}
+#projects {
+    padding: 1.5em;
 }
 .contacts-flex {
     justify-content: space-between;
